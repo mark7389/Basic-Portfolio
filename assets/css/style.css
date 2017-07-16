@@ -1,3 +1,11 @@
+h1,h2,h3{
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+p{
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+
 .top{
 	
 	position:relative;
@@ -17,6 +25,9 @@
 	text-decoration: none;
 	color: #777777;
 	padding:20px auto;
+}
+a{
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 ul{
@@ -38,7 +49,7 @@ ul{
 }
 
 .goto a:hover, a:active {
-    background-color: #1caea6;
+   background-color: #1caea6;
 }
 
 #logo{
@@ -53,6 +64,7 @@ ul{
 	text-align: center;
 	vertical-align: middle;
 	line-height: 45px;
+
 
 }
 .middle{
@@ -87,7 +99,7 @@ ul{
 	left:10.7%;
 	background-color: white;
 	width: 48%;
-	height:600px;
+	height:680px;
 	border:0.5px solid #dddddd;
 	align-items: center;
 	
@@ -132,12 +144,11 @@ ul{
 .box{
 
 	position:absolute;
-	left:17.7px;
 	top:95px;
 	width:100%;
 	height:600px;
 	background-color: transparent;
-	border:0.5px solid #dddddd;
+	
 }
 .box:after {
    content: " "; /* Older browser do not support empty content */
@@ -147,24 +158,73 @@ ul{
    clear: both;
 }
 .work{
+	float:left;
+	width:180px;
+	height: 150px;
+	background-image: url("../images/business.jpg");
+	margin:25px 17.7px;
 
 }
-.food{
-	float: left;
+.work a{
+	padding:14px 71.99999621px;
+}
+.recipes{
+	float:left;
+	width:180px;
+	height: 150px;
+	background-image: url("../images/food.jpg");
+	margin:25px 17.7px;
+}
+.recipes a{
+
+	padding:14px 61.7px;
 
 }
 .ideas{
-
 	float:left;
+	width:180px;
+	height: 150px;
+	background-image: url("../images/tech.jpg");
+	margin:25px 17.7px;
+}
+.ideas a{
+
+	padding: 14px 70.999999px;
 }
 .aspirations{
-
 	float:left;
+	width:180px;
+	height: 150px;
+	background-image: url("../images/soccer.jpg");
+	margin:25px 17.7px;
+}
+.aspirations a{
+
+	padding:14px 51px;
 }
 .philosophy{
 
 	float:left;
+	width:180px;
+	height: 150px;
+	background-image: url("../images/abstract.jpg");
+	margin:25px 17.7px;
 }
+.philosophy a{
+
+	padding:14px 51.7px;
+}
+.box a{
+	
+	color:#ffffff;
+	background-color: #1caea6;
+	text-decoration: none;
+	line-height: 225px;
+	vertical-align: middle;
+	text-align: center;
+
+}
+
 
 .connect{
 	
@@ -183,7 +243,7 @@ ul{
 .connect2{
 
 	position: relative;
-	top:-577.7px;
+	top:-657.7px;
 	left:67.22%;
 	border:0.5px solid #dddddd;
 	background-color: white;
@@ -231,10 +291,29 @@ form{
 	position:absolute;
 	top:95px;
 	left:17.7px;
+	text-align: justify;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
-#textbox{
+#submit{
 
-	width:100%;
+	padding: 14px 50px;
+	text-align: center;
+	background-color: #1caea6;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.textbox{
+	width: 585px;
+	border-color: #dddddd;
+	border-width: 0.5px;
+}
+.textbox1{
+
+	width: 585px;
+	height: 140px;
+	border-color: #dddddd;
+	border-width: 0.5px;
 }
 
 .bottom{
@@ -249,6 +328,7 @@ form{
 	height: 100px;
 	background-color: #666666;
 	text-align: center;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	color: #ffffff;
 	vertical-align: middle;
 	line-height: 100px;
