@@ -1,3 +1,16 @@
+.top{
+	
+	position:relative;
+	display: flex;
+	flex-flow: row;
+	flex-flow: column;
+	flex-wrap: wrap;
+	flex: 1;
+	width:100%;
+	background-color: #ffffff;
+	height: 100px; 
+}
+
 .goto a{
 
 	background-color: transparent;
@@ -7,17 +20,17 @@
 }
 
 ul{
-	position:fixed;
-	top:21px;
-	left:63.8%;
+	position:absolute;
+	top:58px;
+	left:64%;
 }
 
 .goto li{
 
 	display: inline-block;
 	margin-left: 6px;
-	
 }
+
 .goto li + li:before{
 	padding:0 10px;
 	content: " | ";
@@ -25,44 +38,223 @@ ul{
 }
 
 .goto a:hover, a:active {
-    background-color: #efefef;
+    background-color: #1caea6;
 }
 
 #logo{
 	
+	position:absolute;
+	left:7.48%;
+	bottom:-15px;
 	width:18%;
 	height: 90px;
 	color: white;
 	background-color: #1caea6;
-	padding: 20px auto;
 	text-align: center;
 	vertical-align: middle;
-	line-height: 90px;
-}
-#subject1{
+	line-height: 45px;
 
+}
+.middle{
+
+	position:relative;
+	display: flex;
+	flex-flow: row;
+	flex-flow: column;
+	flex-wrap: wrap;
+	flex: 1;
+	width:100%;
+	height: 910px;
+	background-image: url("../images/concrete_seamless.png");
+	
+}
+.container{
+	
+	position:relative;
+	top:25px;
+	left:10.7%;
+	background-color: white;
+	width: 48%;
+	height:317px;
+	border:0.5px solid #dddddd;
+	align-items: center;
+
+}
+.container2{
+
+	position:relative;
+	top:25px;
+	left:10.7%;
+	background-color: white;
+	width: 48%;
+	height:600px;
+	border:0.5px solid #dddddd;
+	align-items: center;
+	
+}
+
+.container3{
+
+	position:relative;
+	top:25px;
+	left:10.7%;
+	background-color: white;
+	width: 48%;
+	height:600px;
+	border:0.5px solid #dddddd;
+	align-items: center;
+
+}
+
+#subject1{
+	
+	position:absolute;
+	top:25px;
+	left:20px;
 	color:#1caea6;
-	width:43.3%;
+	width:95%;
 	height:48px;
 	background-color: transparent;
-	border-bottom:3px solid #efefef;
+	border-bottom:3px solid #dddddd;
+	margin:auto;
+
 
 }
-#subject2{
-
-	color: #1caea6;
-	width:15.2%;
-	height:37px;
-	border-bottom: 2px solid #efefef;
-}
-.bottom{
+#about{
 	
+	position: absolute;
+	left:10px;
+	top:100px;
+	width:180px;
+	height: 150px;
+
+}
+.box{
+
+	position:absolute;
+	left:17.7px;
+	top:95px;
+	width:100%;
+	height:600px;
+	background-color: transparent;
+	border:0.5px solid #dddddd;
+}
+.box:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+.work{
+
+}
+.food{
+	float: left;
+
+}
+.ideas{
+
+	float:left;
+}
+.aspirations{
+
+	float:left;
+}
+.philosophy{
+
+	float:left;
+}
+
+.connect{
+	
+	position: relative;
+	top:-294.6px;
+	left:67.22%;
+	border:0.5px solid #dddddd;
+	background-color: white;
+	width:245px;
+	height:170px;
+	align-items: center;
+
+	
+	
+}
+.connect2{
+
+	position: relative;
+	top:-577.7px;
+	left:67.22%;
+	border:0.5px solid #dddddd;
+	background-color: white;
+	width:245px;
+	height:170px;
+	align-items: center;
+
+}
+.connect3{
+	
+	position: relative;
+	top:-577.7px;
+	left:67.22%;
+	border:0.5px solid #dddddd;
+	background-color: white;
+	width:245px;
+	height:170px;
+	align-items: center;
+}
+
+#subject2{
+	
+	position:absolute;
+	top:21.25px;
+	left:42.875px;
+	color: #1caea6;
+	width:65%;
+	height:37px;
+	background-color: transparent;
+	border-bottom: 2px solid #dddddd;
+	border-bottom-width: 65%;
+	text-align: center;
+	margin:auto;
+}
+
+#social{
+
+	position: absolute;
+	top:85px;
+	left:42.875px;
+	margin: auto;
+}
+form{
+
+	position:absolute;
+	top:95px;
+	left:17.7px;
+}
+#textbox{
+
+	width:100%;
+}
+
+.bottom{
+	position:relative;
+	display: flex;
+	flex-flow: row;
+	flex-flow: column;
+	flex-wrap: wrap;
+	flex: 1;
 	border-top:10px solid #1caea6;
 	width:100%;
 	height: 100px;
 	background-color: #666666;
 	text-align: center;
-	color: white;
+	color: #ffffff;
 	vertical-align: middle;
 	line-height: 100px;
 }
+
+
+
+
+
