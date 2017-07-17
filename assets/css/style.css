@@ -339,6 +339,8 @@ form{
 	height: 140px;
 	border-color: #dddddd;
 	border-width: 0.5px;
+	resize: none;
+
 }
 
 .bottom{
