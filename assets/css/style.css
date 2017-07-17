@@ -87,7 +87,7 @@ ul{
 	left:10.7%;
 	background-color: white;
 	width: 48%;
-	height:317px;
+	height:517px;
 	border:0.5px solid #dddddd;
 	align-items: center;
 
@@ -134,11 +134,18 @@ ul{
 }
 #about{
 	
-	position: absolute;
-	left:10px;
-	top:100px;
+	
+	float:left;
 	width:180px;
 	height: 150px;
+	margin:25px 17.7px;
+
+}
+.story{
+	
+
+	text-align: justify;
+	margin:25px 17.7px;
 
 }
 .box{
@@ -156,6 +163,24 @@ ul{
    display: block;
    height: 0;
    clear: both;
+}
+
+.content:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+   
+}
+.content{
+	
+	position:absolute;
+	top:100px;
+	width:97%;
+	height: 350px;
+	
+	
 }
 .work{
 	float:left;
@@ -229,7 +254,7 @@ ul{
 .connect{
 	
 	position: relative;
-	top:-294.6px;
+	top:-494.6px;
 	left:67.22%;
 	border:0.5px solid #dddddd;
 	background-color: white;
