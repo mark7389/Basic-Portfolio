@@ -1,367 +1,216 @@
+/* set header fonts 
+--------------------*/
 h1,h2,h3{
+
 	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+h2{
+	padding-bottom: 20px auto;
 }
 p{
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-
+/* configure top, middle, bottom sections of webpage 
+-----------------------------------------------------*/
 .top{
-	
-	position:relative;
-	display: flex;
-	flex-flow: row;
-	flex-flow: column;
-	flex-wrap: wrap;
-	flex: 1;
-	width:100%;
-	background-color: #ffffff;
-	height: 100px; 
+	position: relative;
+	width:960px;
+	height:100px;
+	padding:0px auto;
+	margin:auto;
 }
+.middle{
+	position: relative;
+	width:960px;
+	min-height: 650px;
+	padding:0px auto;
+	margin: auto;
+	background-image: url("../images/concrete_seamless.png");
+}
+.bottom{
+	position:relative;
+	background-color: #666666;
+	width:960px;
+	height:100px;
+	border-top:10px solid #1caec6;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 100px;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	padding:0px auto;
+	margin: auto;
+}
+/*top container content configuration and positioning
+------------------------------------------------------*/
+#logo{
+	position:absolute;				
+	left:-19px;
+	top:0px;
+	background-color: #1caec6;
+	color:#ffffff;
+	width:25%;
+	height: 85px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 42.5px;
+}
+.goto{
 
-.goto a{
-
-	background-color: transparent;
+	position:absolute;
+	left:62%;
+	top: 55px;
+	list-style: none;
+}
+.goto li,a{
+	display: inline-block;
 	text-decoration: none;
 	color: #777777;
-	padding:20px auto;
+	margin:auto;	
 }
-a{
-	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-}
-
-ul{
-	position:absolute;
-	top:58px;
-	left:64%;
-}
-
-.goto li{
-
-	display: inline-block;
-	margin-left: 6px;
-}
-
 .goto li + li:before{
 	padding:0 10px;
 	content: " | ";
 	color: #efefef;
 }
-
 .goto a:hover, a:active {
    background-color: #1caea6;
 }
-
-#logo{
-	
-	position:absolute;
-	left:7.48%;
-	bottom:-15px;
-	width:18%;
-	height: 90px;
-	color: white;
-	background-color: #1caea6;
-	text-align: center;
-	vertical-align: middle;
-	line-height: 45px;
-
-
-}
-.middle{
-
-	position:relative;
-	display: flex;
-	flex-flow: row;
-	flex-flow: column;
-	flex-wrap: wrap;
-	flex: 1;
-	width:100%;
-	height: 910px;
-	background-image: url("../images/concrete_seamless.png");
-	
-}
+/*middle container content configuration and positioning
+--------------------------------------------------------*/
 .container{
-	
 	position:relative;
 	top:25px;
-	left:10.7%;
-	background-color: white;
-	width: 48%;
-	height:517px;
-	border:0.5px solid #dddddd;
-	align-items: center;
-
+	left:15px;
+	background-color: #ffffff;
+	width:650px;
+	min-height: 620px;
+	border: 0.5px solid #dddddd;
 }
-.container2{
-
-	position:relative;
-	top:25px;
-	left:10.7%;
-	background-color: white;
-	width: 48%;
-	height:680px;
-	border:0.5px solid #dddddd;
-	align-items: center;
-	
-}
-
-.container3{
-
-	position:relative;
-	top:25px;
-	left:10.7%;
-	background-color: white;
-	width: 48%;
-	height:600px;
-	border:0.5px solid #dddddd;
-	align-items: center;
-
-}
-
 #subject1{
-	
 	position:absolute;
 	top:25px;
 	left:20px;
-	color:#1caea6;
-	width:95%;
-	height:48px;
-	background-color: transparent;
-	border-bottom:3px solid #dddddd;
+	color:#1caec6;
+	border-bottom: 3px solid #efefef;
+	height:45px;
+	width:85%;
 	margin:auto;
-
-
-}
-#about{
-	
-	
-	float:left;
-	width:180px;
-	height: 150px;
-	margin:25px 17.7px;
-
-}
-.story{
-	
-
-	text-align: justify;
-	margin:25px 17.7px;
-
-}
-.box{
-
-	position:absolute;
-	top:95px;
-	width:100%;
-	height:600px;
 	background-color: transparent;
-	
-}
-.box:after {
-   content: " "; /* Older browser do not support empty content */
-   visibility: hidden;
-   display: block;
-   height: 0;
-   clear: both;
-}
-
-.content:after {
-   content: " "; /* Older browser do not support empty content */
-   visibility: hidden;
-   display: block;
-   height: 0;
-   clear: both;
-   
+	text-align: left;
+	line-height: 45px;
+	vertical-align: middle;
 }
 .content{
-	
 	position:absolute;
-	top:100px;
-	width:97%;
-	height: 350px;
+	top:90px;
+	left:15px;
+	padding-right: 35px;
 	
-	
 }
-.work{
-	float:left;
-	width:180px;
-	height: 150px;
-	background-image: url("../images/business.jpg");
-	margin:25px 17.7px;
-
+/* clearfix
+--------------*/
+.content: after{
+	content=" ";
+	visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
 }
-.work a{
-	padding:14px 71.99999621px;
-}
-.recipes{
-	float:left;
-	width:180px;
-	height: 150px;
-	background-image: url("../images/food.jpg");
-	margin:25px 17.7px;
-}
-.recipes a{
-
-	padding:14px 61.7px;
-
-}
-.ideas{
-	float:left;
-	width:180px;
-	height: 150px;
-	background-image: url("../images/tech.jpg");
-	margin:25px 17.7px;
-}
-.ideas a{
-
-	padding: 14px 70.999999px;
-}
-.aspirations{
-	float:left;
-	width:180px;
-	height: 150px;
-	background-image: url("../images/soccer.jpg");
-	margin:25px 17.7px;
-}
-.aspirations a{
-
-	padding:14px 51px;
-}
-.philosophy{
+#about{
 
 	float:left;
-	width:180px;
-	height: 150px;
-	background-image: url("../images/abstract.jpg");
-	margin:25px 17.7px;
-}
-.philosophy a{
-
-	padding:14px 51.7px;
-}
-.box a{
-	
-	color:#ffffff;
-	background-color: #1caea6;
-	text-decoration: none;
-	line-height: 225px;
-	vertical-align: middle;
-	text-align: center;
-
-}
-
-
-.connect{
-	
-	position: relative;
-	top:-494.6px;
-	left:67.22%;
-	border:0.5px solid #dddddd;
-	background-color: white;
-	width:245px;
-	height:170px;
-	align-items: center;
-
-	
-	
-}
-.connect2{
-
-	position: relative;
-	top:-657.7px;
-	left:67.22%;
-	border:0.5px solid #dddddd;
-	background-color: white;
-	width:245px;
-	height:170px;
-	align-items: center;
-
-}
-.connect3{
-	
-	position: relative;
-	top:-577.7px;
-	left:67.22%;
-	border:0.5px solid #dddddd;
-	background-color: white;
-	width:245px;
-	height:170px;
-	align-items: center;
-}
-
-#subject2{
-	
-	position:absolute;
-	top:21.25px;
-	left:42.875px;
-	color: #1caea6;
-	width:65%;
-	height:37px;
-	background-color: transparent;
-	border-bottom: 2px solid #dddddd;
-	border-bottom-width: 65%;
-	text-align: center;
-	margin:auto;
-}
-
-#social{
-
-	position: absolute;
-	top:85px;
-	left:42.875px;
+	border-color: 3px solid black;
 	margin: auto;
+	margin-right: 25px;
 }
-form{
+#subject2{
+	position: absolute;
+	top:15px;
+	left:20px;
+	color:#1caec6;
+	border-bottom: 2px solid #efefef;
+	height: 45px;
+	width:85%;
+	margin:auto;
+	background-color: transparent;
+	text-align: left;
+	line-height: 45px;
+	vertical-align: middle;
+}
+.connect{
+	position:relative;
+	left:72%;
+	top:-597px;
+	background-color: #ffffff;
+	border:0.5px solid #dddddd;
+	width:193px;
+	height: 140px;
 
-	position:absolute;
-	top:95px;
-	left:17.7px;
-	text-align: justify;
-	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+#social{
+	position: absolute;
+	top:75px;
+	left: 20px;
+	margin:auto;
+	line-height: 65px;
+	vertical-align:middle;
+}
+/*portfolio images configuration and positionining
+--------------------------------------------------*/
+.p_img{
+	float:left;
+	margin: 15px 15px;
+	width:180px;
+	height: 150px;
+	vertical-align: middle;
+	line-height: 225px;
+}
+.p_img.work{
+	background-image: url("../images/business.jpg");
+}
+.p_img.recipes{
+	background-image: url("../images/food.jpg");
+}
+.p_img.aspirations{
+	background-image: url("../images/soccer.jpg");
+}
+.p_img.ideas{
+	background-image: url("../images/tech.jpg");
+}
+.p_img.philosophy{
+	background-image: url("../images/abstract.jpg");
+}
+/*changed links on portfolio images to buttons easier to adjust width
+----------------------------------------------------------------------*/
+button{
+	width:180px;
+	height:45px;
+	font-size: 16px;
+	color: white;
+	background-color: #1caec6;
+}
+/*form configuration
+--------------------*/
+form{
+	width: 580px;
+}
+input{
+	width:100%;
+}
+textarea{
+	width:100%;
+	height: 250px;
 }
 #submit{
 
-	padding: 14px 50px;
+	color:white;
+	background-color: #1caec6;
+	width:120px;
+	height: 50px;
 	text-align: center;
-	background-color: #1caea6;
-	text-decoration: none;
-	color: #ffffff;
-}
-
-.textbox{
-	width: 585px;
-	border-color: #dddddd;
-	border-width: 0.5px;
-}
-.textbox1{
-
-	width: 585px;
-	height: 140px;
-	border-color: #dddddd;
-	border-width: 0.5px;
-	resize: none;
-
-}
-
-.bottom{
-	position:relative;
-	display: flex;
-	flex-flow: row;
-	flex-flow: column;
-	flex-wrap: wrap;
-	flex: 1;
-	border-top:10px solid #1caea6;
-	width:100%;
-	height: 100px;
-	background-color: #666666;
-	text-align: center;
-	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	color: #ffffff;
+	margin: auto;
+	font-size: 20px;
+	line-height: 50px;
 	vertical-align: middle;
-	line-height: 100px;
 }
-
-
-
-
-
